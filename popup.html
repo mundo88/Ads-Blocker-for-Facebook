@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+    <script type="text/javascript" src="popup.js">
+    </script>
+    <link href="popup.css" rel="stylesheet" type="text/css" />
+    <link href="content.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="container">
+        <div class="about-label" style="margin-bottom: 1em; font-weight: bold"></div>
+        <div class="btn-label">Night Mode</div>
+        <div class="btn-wrapper">
+            <button id="night-mode-enable" class="on"><span id="state-on">On</span><span id="state-off">Off</span></button>
+        </div>
+        <div class="slider-label">
+            <p></p>
+        </div>
+        <div class="slider-wrapper">
+            <input id="night-mode-invertAmount" name="invertAmount" type="range" value="0.8" min="0.7" max="1" step="0.01" />
+        </div>
+        <div class="slider-label" style="margin: 1em 0">
+            <div class="btn-label">Tắt Night mode ở website hiện tại !</div>
+            <div class="btn-wrapper">
+                <button id="night-mode-exclude"><span id="state-on">No</span><span id="state-off">Ok</span></button>
+            </div>
+        </div>
+    </div>
+</body>
