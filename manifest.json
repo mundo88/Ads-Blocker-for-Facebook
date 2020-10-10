@@ -1,0 +1,28 @@
+{
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "manifest_version": 2,
+    "name": "Hide Ads Facebook",
+    "version": "1.8.3",
+    "description": "Hide all Ads for Facebook™",
+    "icons": {
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "author": "MinhPhung",
+    "homepage_url": "https://github.com/Mundo291/Hide-ADS-FACEBOOK",
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.facebook.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "content_security_policy": "default-src 'self'"
+}
