@@ -28,14 +28,12 @@
     }
 
     const doHack = (feed) => {
-        // 1. Find this unique block inside the feed
         const spanWithId = feed.querySelector('span[id]');
 
         if(!spanWithId) return;
 
         const spanChildren = spanWithId.children;
 
-        // 2. Check if the second child of spanWithId is not a DIV element
         if(spanChildren && spanChildren.length) {
             if(spanChildren[1]) {
                 // if(spanChildren[1].nodeName !== 'SPAN') console.log(spanChildren[1].nodeName);
